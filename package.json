@@ -1,0 +1,25 @@
+{
+  "name": "artimeago",
+  "version": "1.0.0",
+  "description": "A package made specifically for arabic timeAgo calculations.",
+  "main": "arTimeAgo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scr2em/arTimeAgo.git"
+  },
+  "keywords": [
+    "timeAgo",
+    "arabic",
+    "date",
+    "convert"
+  ],
+  "author": "Mohamed M. Abdelgwad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scr2em/arTimeAgo/issues"
+  },
+  "homepage": "https://github.com/scr2em/arTimeAgo#readme"
+}
