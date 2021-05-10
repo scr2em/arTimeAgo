@@ -1,6 +1,6 @@
 {
   "name": "artimeago",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package made specifically for arabic timeAgo calculations.",
   "main": "arTimeAgo.js",
   "scripts": {
