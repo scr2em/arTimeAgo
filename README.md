@@ -10,7 +10,10 @@ An NPM package made specifically for arabic timeAgo calculations.
 
 2- ability to provide a max number of days after which the function will stop converting
 
-
+for web: 
+```
+<script src="https://unpkg.com/artimeago@1.0.1/arTimeAgo.js></script>
+```
 ## Examples
 
 ```javascript
