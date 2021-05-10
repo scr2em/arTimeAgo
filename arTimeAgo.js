@@ -1,7 +1,7 @@
-function arTimeAgo({ date, max = 30 }) {
+function arTimeAgo({ date, max }) {
 
     if (!date) {
-        throw "A time must be provided"
+        throw "A date must be provided"
     }
     let o = {
         ثانية: 1000,
@@ -30,26 +30,27 @@ function arTimeAgo({ date, max = 30 }) {
         },
         ts = Date.now() - new Date(date).getTime(),
         ii;
-    
-       if (ts < 0) {
+
+    if (ts < 0) {
         ts *= -1;
         dir = "من الآن ";
-    }else if(ts ==0){
+    } else if (ts == 0) {
         return "ألآن"
     }
-
-    if (ts / (1000 * 3600 * 24) > max) {
-        return new Date(date).toLocaleDateString("ar-EG", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-        });
+    if (max) {
+        if (ts / (1000 * 3600 * 24) > max) {
+            return new Date(date).toLocaleDateString("ar-EG", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+            });
+        }
     }
     for (let i in o) {
         if (r(ts) < o[i]) return pl(ii || "دقيقة", r(ts / (o[ii] || 1)));
         ii = i;
     }
-    return pl(i, r(ts / o[i]));
+    return pl(ii, r(ts / o[ii]));
 };
 
 
